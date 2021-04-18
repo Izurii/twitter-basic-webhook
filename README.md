@@ -1,4 +1,4 @@
-# webhook-mamaco
+# twitter-basic-webhook
 
 Really simple Twitter webhook that stream the tweets from a specific user to a discord webhook.
 
