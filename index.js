@@ -90,7 +90,6 @@ function streamConnect(retryAttempt) {
 	stream.on('data', data => {
 		try {
 			const json = JSON.parse(data);
-			console.log(json);
 			sendPostWebHook(json);
 			retryAttempt = 0;
 		} catch (e) {
