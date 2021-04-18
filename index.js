@@ -108,7 +108,7 @@ function streamConnect(retryAttempt) {
 			process.exit(1);
 		} else {
 			setTimeout(() => {
-				console.log("Connection error, tentando de novo na minha rola...");
+				console.log("Connection error, tentando trying again...");
 				streamConnect(++retryAttempt);
 			}, 2 ** retryAttempt);
 		}
